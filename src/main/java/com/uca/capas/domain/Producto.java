@@ -21,7 +21,7 @@ public class Producto {
 	private Double precio;
 
 	@NotEmpty(message = "El campo no puede estar vacio")
-	@Pattern(regexp = "^([0-2][0-9]|(3)[0-1])(\\\\/)(((0)[0-9])|((1)[0-2]))(\\\\/)\\\\d{4}$", message = "El formato debe ser dd/MM/aaaa")
+	@Pattern(regexp = "^([0-2][0-9]|(3)[0-1])(\\/)(((0)[0-9])|((1)[0-2]))(\\/)\\d{4}$", message = "El formato debe ser dd/MM/aaaa")
 	private String vencimiento;
 
 	public String getNombre() {
